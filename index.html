@@ -26,7 +26,7 @@
     <!-- Pantalla Inicial -->
     <div id="pantalla-inicial">
         <p>¿A qué país pertenece la bandera?</p>
-        <button class="btn">Iniciar</button>
+        <button class="btn" onclick="comenzarJuego()">Iniciar</button>
     </div>
 
     <!-- Pantalla Juego -->
@@ -37,19 +37,19 @@
         <div class="opciones">
 
             <!-- Opcion 01 -->
-            <div class="opcion" id="op0">
+            <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
                 <div class="letra" id="l0">A</div>
                 <div class="nombre" id="n0">Opcion A</div>
             </div>
 
             <!-- Opcion 02 -->
-            <div class="opcion" id="op1">
+            <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
                 <div class="letra" id="l1">B</div>
                 <div class="nombre" id="n1">Opcion B</div>
             </div>
 
             <!-- Opcion 03 -->
-            <div class="opcion" id="op2">
+            <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
                 <div class="letra" id="l2">C</div>
                 <div class="nombre" id="n2">Opcion C</div>
             </div>
@@ -58,9 +58,9 @@
 
     <!-- Pantalla Final -->
     <div id="pantalla-final">
-        <h2>Correctas: <span>3</span></h2>
-        <h2>Incorrectas: <span>2</span></h2>
-        <button class="btn">Volver al Inicio</button>
+        <h2>Correctas: <span id="numCorrectas">3</span></h2>
+        <h2>Incorrectas: <span id="numIncorrectas">2</span></h2>
+        <button class="btn" onclick="volverAlInicio()">Volver al Inicio</button>
     </div>
 
     <!-- Footer -->
@@ -68,9 +68,9 @@
         ©Joel Vargas - 2022
     </footer>
 
-</body> <!--fin.body-->
+    <!-- JAVASCRIPT -->
+    <script src="./js/script.js"></script>
 
-<!-- JAVASCRIPT -->
-<script src="./js/script.js"/>
+</body> <!--fin.body-->
 
 </html> <!--fin.html-->
