@@ -1,0 +1,76 @@
+<!-- HTML5 -->
+<!DOCTYPE html>
+
+<!-- HTML -->
+<html lang="en">
+
+<!-- HEAD -->
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Fonts -->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');</style>
+    <!-- Title -->
+    <title>Adivinar la Bandera</title>
+</head> <!--fin.Head-->
+
+<!-- BODY -->
+<body>
+
+    <h1>Adivine la Bandera</h1>
+
+    <!-- Pantalla Inicial -->
+    <div id="pantalla-inicial">
+        <p>¿A qué país pertenece la bandera?</p>
+        <button class="btn">Iniciar</button>
+    </div>
+
+    <!-- Pantalla Juego -->
+    <div class="pantalla-juego" id="pantalla-juego">
+        <img src="./img/ad.svg" alt="" id="imgBandera">
+
+        <!-- Opciones -->
+        <div class="opciones">
+
+            <!-- Opcion 01 -->
+            <div class="opcion" id="op0">
+                <div class="letra" id="l0">A</div>
+                <div class="nombre" id="n0">Opcion A</div>
+            </div>
+
+            <!-- Opcion 02 -->
+            <div class="opcion" id="op1">
+                <div class="letra" id="l1">B</div>
+                <div class="nombre" id="n1">Opcion B</div>
+            </div>
+
+            <!-- Opcion 03 -->
+            <div class="opcion" id="op2">
+                <div class="letra" id="l2">C</div>
+                <div class="nombre" id="n2">Opcion C</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pantalla Final -->
+    <div id="pantalla-final">
+        <h2>Correctas: <span>3</span></h2>
+        <h2>Incorrectas: <span>2</span></h2>
+        <button class="btn">Volver al Inicio</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        ©Joel Vargas - 2022
+    </footer>
+
+</body> <!--fin.body-->
+
+<!-- JAVASCRIPT -->
+<script src="./js/script.js"/>
+
+</html> <!--fin.html-->
